@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h> 
 int main()  
-{  
-    char name[20];
+{  int yn;
+ do
+ { char name[20];
     printf("Enter you name:");
     fgets(name,20,stdin);
     
@@ -269,7 +270,8 @@ int main()
         }
     }
     else //exit
-      {printf("uh oh");}    
+      {printf("uh oh");}  printf("\n ENTER 1 TO CONTINUE \n ENTER 0 TO QUIT \n");scanf("%d",&yn);
+}while(yn==1);  
     
     return 0;  
 }  
